@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+<!-- Education
 ======
 **Tufts University** — Medford, MA  
 *July 2023 - Expected December 2024*  
@@ -17,7 +17,13 @@ M.Sc. in Data Science (GPA: 4.0)
 
 **Carleton College** — Northfield, MN  
 *September 2016 - June 2020*  
-B.A. in Economics with an Emphasis in Statistics and Computer Science  
+B.A. in Economics with an Emphasis in Statistics and Computer Science   -->
+
+Education
+======
+  <ul>{% for post in site.education reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
 
 Work experience
 ======
@@ -81,11 +87,6 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul> -->
 
-Education
-======
-  <ul>{% for post in site.education reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
 <!--   
 Service and leadership
 ======
