@@ -2,7 +2,7 @@
 title: "Masters of Science in Data Science"
 collection: education
 type: "Graduate Degree"
-permalink: /teaching/2024-tufts-MSDS
+permalink: /education/2024-tufts-MSDS
 venue: "Tufts University, School of Engineering"
 date: 2024-12-10
 location: "Medford, MA"
