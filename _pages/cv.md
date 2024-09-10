@@ -28,45 +28,36 @@ Education
 Work experience
 ======
 
-### Smart Information Flow Technologies (SIFT)
+## Smart Information Flow Technologies (SIFT)
 **Research Scientist (April 2023 - Present)**
 
-Co-lead for company effort under DARPA HABITUS program.  
+- Co-lead for company effort under DARPA HABITUS program.  
   - Developed ML pipeline to project cultural text assets onto a “cultural values-space” and detect latent belief clusters using unsupervised learning techniques.  
-
-Lead ML developer under DARPA VANESSA program.  
+- Lead ML developer under DARPA VANESSA program.  
   - Developing transformer-based system for modeling team dynamics using physiomarker signal processing techniques.
-
-Lead ML developer under DARPA OBLONGATA program.  
+- Lead ML developer under DARPA OBLONGATA program.  
   - Collaborated with subcontractors and neurobehavioral experts to develop Collective Allostatic Load estimation techniques.
-
-Led publications on:
+- Led publications on:
   - Measuring moral value biases in LLMs @ the MP2 workshop - NeurIPS 2023.
   - Recognizing Value Resonance @ LREC-Coling 2024.
-
-Contributed to winning proposals for:
+- Contributed to winning proposals for:
   - DARPA VANESSA  
 
 **Associate Researcher (July 2020 - April 2023)**
 
-Directed research under DARPA HABITUS on the recognition of complex belief resonance in textual assets.  
+- Directed research under DARPA HABITUS on the recognition of complex belief resonance in textual assets.  
   - Modeled a novel task in NLP: Recognizing Value Resonance.
-
-Lead developer for ARMY CONCORDIA.  
+- Lead developer for ARMY CONCORDIA.  
   - Engineered an ML pipeline for predicting strategic dissent during collaborative activities using wearable physiological data.  
   - Revamped legacy UI system for dynamic operation.
-
-Led opposition team for DARPA SCHNEIDER.  
+- Led opposition team for DARPA SCHNEIDER.  
   - Utilized ML techniques to predict user performance on cognitive and physical tasks.
-
-ML Developer under DARPA SCORE
+- ML Developer under DARPA SCORE
   - Developed the DeepClaim model for assigning confidence scores to claims in academic papers.  
   - Designed the SCAN system for predicting academic paper validity using hierarchical “claim-cluster” graphs.
-
-Led publication:
+- Led publication:
   - Recognizing Value Resonance @ SBP-BRiMS 2022. 
-
-Contributed to winning proposals for:
+- Contributed to winning proposals for:
   - ARMY CONCORDIA
   - DARPA OBLONGATA  
   
