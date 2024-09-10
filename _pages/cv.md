@@ -23,7 +23,8 @@ Work experience
 ======
 
 ### Smart Information Flow Technologies (SIFT)
-**April 2023 - Present: Research Scientist**
+**Research Scientist (April 2023 - Present)**
+
 Co-lead for company effort under DARPA HABITUS program.  
   - Developed ML pipeline to project cultural text assets onto a “cultural values-space” and detect latent belief clusters using unsupervised learning techniques.  
 Lead ML developer under DARPA VANESSA program.  
@@ -36,7 +37,8 @@ Led publications on:
 Contributed to winning proposals for:
   - DARPA VANESSA  
 
-**July 2020 - April 2023: Associate Researcher**
+**Associate Researcher (July 2020 - April 2023)**
+
 Directed research under DARPA HABITUS on the recognition of complex belief resonance in textual assets.  
   - Modeled a novel task in NLP: Recognizing Value Resonance.
 Lead developer for ARMY CONCORDIA.  
