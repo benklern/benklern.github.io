@@ -18,8 +18,6 @@ M.Sc. in Data Science (GPA: 4.0)
 **Carleton College** — Northfield, MN  
 *September 2016 - June 2020*  
 B.A. in Economics with an Emphasis in Statistics and Computer Science  
-- Advisor: Faress Bhuiyan  
-- Dissertation (with Distinction): *Do Biometric Smartcards Help the Neediest Most?*
 
 Work experience
 ======
