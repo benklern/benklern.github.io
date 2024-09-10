@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Benkler"
+title: "N. Benkler - Professional Portal"
 author_profile: true
 redirect_from: 
   - /about/
