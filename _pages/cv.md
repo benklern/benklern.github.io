@@ -62,6 +62,7 @@ Skills
 **Statistics & ML Skills**: Deep Learning, Unsupervised Learning, Reinforcement Learning, Explainable AI, Regression & Classification, Feature Engineering, Model Tuning & Optimization, Pipeline Engineering, UI Overlay  
 **Technical Proficiencies**: Git, CUDA, LaTeX, Jupyter, Qualtrics, Microsoft Office  
 **Natural Languages**: Native: English, Hebrew | Conversational: Spanish
+
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
