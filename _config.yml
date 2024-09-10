@@ -27,7 +27,7 @@ author:
   bio              : "AI Research Scientist specializing in Deep Learning, NLP, Physiological Signal Processing, and Team Dynamics."
   location         : "Burlington, VT"
   employer         : "Smart Information Flow Technologies"
-  uri              : https://sift.net
+  uri              : # URL #https://sift.net
   email            : "nbenkler@sift.net" 
 
   # Academic websites
