@@ -1,5 +1,5 @@
 ---
-title: "Masters of Science in Data Science"
+title: "Masters of Science in Data Science (In Progress)"
 collection: education
 type: "Graduate Degree"
 permalink: /education/2024-tufts-MSDS
