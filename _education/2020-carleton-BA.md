@@ -10,9 +10,12 @@ location: "Northfiled, MN"
 
 <!-- This is a description of a teaching experience. You can use markdown like any other post. -->
 
-<!-- Grades \& Awards
-======
 
+Grades & Awards
+======
+Distinction on Senior Thesis
+
+<!-- 
 Relevant Coursework
 ======
 
