@@ -5,6 +5,7 @@ type: "Graduate Degree"
 permalink: /education/2024-tufts-MSDS
 venue: "Tufts University, School of Engineering"
 date: 2024-12-10
+expectation: "Expected"
 location: "Medford, MA"
 ---
 

@@ -5,6 +5,7 @@ type: "Undergraduate Degree"
 permalink: /education/2020-carleton-BA
 venue: "Carleton College, Economics Department"
 date: 2020-06-13
+expectation: ""
 location: "Northfiled, MN"
 ---
 
