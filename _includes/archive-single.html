@@ -39,9 +39,9 @@
     {% endif %}
 
         {% if post.collection == 'teaching' or post.collection == 'education' %}
-          <!-- {% if post.type == "Graduate Degree"%}
+          {% if post.type == "Graduate Degree"%}
             <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} (Expected) </p>
-          {%else%} -->
+          {%else%}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
