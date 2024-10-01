@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "N. Benkler - Professional Portal"
+title: "Noam Benkler - Professional Portal"
 author_profile: true
 redirect_from: 
   - /about/
