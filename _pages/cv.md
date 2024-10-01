@@ -31,35 +31,23 @@ Work experience
 ## Smart Information Flow Technologies (SIFT)
 **Research Scientist (April 2023 - Present)**
 
-- Co-lead for company effort under DARPA HABITUS program.  
-  - Developed ML pipeline to project cultural text assets onto a “cultural values-space” and detect latent belief clusters using unsupervised learning techniques.  
-- Lead ML developer under DARPA VANESSA program.  
-  - Developing transformer-based system for modeling team dynamics using physiomarker signal processing techniques.
-- Lead ML developer under DARPA OBLONGATA program.  
-  - Collaborated with subcontractors and neurobehavioral experts to develop Collective Allostatic Load estimation techniques.
-- Led publications on:
+- Developed machine learning pipelines to map cultural text data onto a multidimensional value framework and uncover latent belief clusters using unsupervised methods.
+- Led the design and implementation of a system using transformer models to analyze team dynamics through physiological signal processing.
+- Worked with subcontractors and neurobehavioral specialists to develop techniques for estimating collective stress levels through multi-signal integration.
+- Authored publications on:
   - Measuring moral value biases in LLMs @ the MP2 workshop - NeurIPS 2023.
   - Recognizing Value Resonance @ LREC-Coling 2024.
-- Contributed to winning proposals for:
-  - DARPA VANESSA  
+- Contributed to winning proposals.
 
 **Associate Researcher (July 2020 - April 2023)**
 
-- Directed research under DARPA HABITUS on the recognition of complex belief resonance in textual assets.  
-  - Modeled a novel task in NLP: Recognizing Value Resonance.
-- Lead developer for ARMY CONCORDIA.  
-  - Engineered an ML pipeline for predicting strategic dissent during collaborative activities using wearable physiological data.  
-  - Revamped legacy UI system for dynamic operation.
-- Led opposition team for DARPA SCHNEIDER.  
-  - Utilized ML techniques to predict user performance on cognitive and physical tasks.
-- ML Developer under DARPA SCORE
-  - Developed the DeepClaim model for assigning confidence scores to claims in academic papers.  
-  - Designed the SCAN system for predicting academic paper validity using hierarchical “claim-cluster” graphs.
-- Led publication:
-  - Recognizing Value Resonance @ SBP-BRiMS 2022. 
-- Contributed to winning proposals for:
-  - ARMY CONCORDIA
-  - DARPA OBLONGATA  
+- Directed research efforts focused on recognizing complex belief systems and value patterns within textual data.
+- Developed a machine learning system for predicting dissent in collaborative environments, using physiological data collected from wearable devices.
+- Overhauled a legacy user interface system to support dynamic and real-time operations.
+- Led a team tasked with using machine learning to predict performance in cognitive and physical tasks based on user data.
+- Developed a model for assigning confidence scores to academic claims and a system for evaluating the validity of research papers through claim clustering.
+- Led publication on Recognizing Value Resonance @ SBP-BRiMS 2022. 
+- Contributed to multiple winning project proposals.
   
 Skills
 ======
