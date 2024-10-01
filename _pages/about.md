@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-Hi! I'm Noam Benkler, a research scientist specializing in data science and machine learning at [Smart Information Flow Technologies (SIFT)](https://www.sift.net/). My research primarily focuses on Natural Language Processing for computational anthropology and Biomarker Signal Processing to assess team cohesion. I’ve been with SIFT since earning my BA in 2020 from [Carleton College](https://benklern.github.io/education/2020-carleton-BA), and I’m currently completing my final term of the [Master’s in Data Science program at Tufts University](https://benklern.github.io/education/2024-tufts-MSDS). 
+Hi! I'm Noam Benkler, a research scientist specializing in data science and machine learning at [Smart Information Flow Technologies (SIFT)](https://www.sift.net/). My research primarily focuses on Natural Language Processing for computational anthropology and Biomarker Signal Processing to assess team cohesion. I’ve been with SIFT since earning my BA in 2020 from [Carleton College](https://benklern.github.io/education/2020-carleton-BA), and I’m currently completing my final term of the Master’s in Data Science program at [Tufts University](https://benklern.github.io/education/2024-tufts-MSDS). 
 
 In my free time, I enjoy hiking Vermont’s Green Mountains and playing Settlers of Catan. Feel free to reach out via email, explore my [publications](https://benklern.github.io/publications/), or check out my [CV](https://benklern.github.io/cv/).
 
