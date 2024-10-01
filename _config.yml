@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Noam Benkler / Professional Portal"
+title                    : "Noam Benkler
 title_separator          : "-"
 name                     : &name "Noam Benkler"
 description              : &description "AI Research Scientist"
