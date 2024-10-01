@@ -10,8 +10,9 @@ location: "Medford, MA"
 
 <!-- This is a description of a teaching experience. You can use markdown like any other post. -->
 
-<!-- Grades \& Awards
-====== -->
+Grades \& Awards
+======
+GPA: 4.0
 
 Coursework
 ======
