@@ -1,17 +1,11 @@
 ---
 layout: archive
-title: "Tutorials"
 permalink: /tutorials/
+title: "Tutorials"
 author_profile: true
 ---
 
 {% include base_path %}
-
-{% for post in site.tutorials reversed %}
-  {% include archive-single.html %}
-{% endfor %}
-
-<!-- {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
 {% for tutorial in site.tutorials %}
   {% capture year %}{{ tutorial.date | date: '%Y' }}{% endcapture %}
@@ -20,28 +14,4 @@ author_profile: true
     {% capture written_year %}{{ year }}{% endcapture %}
   {% endif %}
   {% include archive-single.html %}
-{% endfor %} -->
-
-
-<!-- 
-
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
- -->
+{% endfor %}

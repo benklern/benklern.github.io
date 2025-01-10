@@ -1,21 +1,12 @@
 ---
 title: "Prompt Engineering Part I"
 date: 2025-01-10
-permalink: /tutorials/prompt_engineering/TheBasics
+permalink: /tutorials/prompt_engineering/TheBasics/
 tags:
   - family tutorials
   - LLMs
   - prompt engineering
 ---
-<!-- ---
-title: "Prompt Engineering Part I"
-collection: teaching
-# type: "Undergraduate Degree"
-permalink: /tutorials/prompt_engineering/TheBasics
-# venue: "Carleton College, Economics Department"
-# date: 2020-06-13
-# location: "Northfiled, MN"
---- -->
 
 # LLM Usage – Rules of Thumb
 
