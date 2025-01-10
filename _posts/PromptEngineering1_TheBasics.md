@@ -1,7 +1,7 @@
 ---
 title: "Prompt Engineering Part I"
-date: 2024-01-10
-permalink: /tutorials/prompt_engineering/TheBasics/
+date: 2025-01-10
+permalink: /posts/prompt_engineering/TheBasics/
 tags:
   - family tutorials
   - LLMs
