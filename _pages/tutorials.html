@@ -7,7 +7,11 @@ author_profile: true
 
 {% include base_path %}
 
-{% include base_path %}
+{% for post in site.tutorials reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<!-- {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
 {% for tutorial in site.tutorials %}
   {% capture year %}{{ tutorial.date | date: '%Y' }}{% endcapture %}
@@ -16,14 +20,10 @@ author_profile: true
     {% capture written_year %}{{ year }}{% endcapture %}
   {% endif %}
   {% include archive-single.html %}
-{% endfor %}
+{% endfor %} -->
+
 
 <!-- 
-
-
-{% for post in site.tutorials reversed %}
-  {% include archive-single.html %}
-{% endfor %}
 
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
