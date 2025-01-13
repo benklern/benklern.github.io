@@ -1,6 +1,6 @@
 ---
 title: 'Prompt Engineering Part I'
-date: 2025-01-10
+date: 2025-01-13
 permalink: /posts/2025/01/blog-post-6/
 tags:
   - family tutorials
@@ -41,6 +41,7 @@ Each of these 4-5 steps should already improve your results.
 | **3. Specify the Task**: “Your task is to [Task]” | Your task is to **generate a high-level prompt-engineering cheat-sheet for beginners**. |
 | **4. Define your Output Format**: “Return your answer as [Output Format]” | Return your answer as **a table with two columns. The first column should include an ordered list explaining how to structure each segment of an ideal prompt. The second column should include a relevant example.** |
 | **5. (Optional) Define the Mode/Tonality/Style of the desired response**: “Your response should be [Style]” | Your response should be **clear, concise, and straightforward**. |
+
 ---
 
 ### Final Template
