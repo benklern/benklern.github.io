@@ -8,6 +8,24 @@ tags:
   - prompt engineering
 ---
 
+<script>
+    function copyToClipboard() {
+        // Copy the text content to clipboard
+        const text = document.getElementById('template-code').innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            // Change the button text to "✔ Copied"
+            const button = document.getElementById('copy-button');
+            button.innerHTML = '✔ Copied';
+            
+            // Revert the button text after 3 seconds
+            setTimeout(() => {
+                button.innerHTML = 'Copy code';
+            }, 3000);
+        });
+    }
+</script>
+
+
 <!-- # Prompt Engineering: The Basics -->
 Each of these 4-5 steps should already improve your results.
 
@@ -52,31 +70,9 @@ You are an [LLM Persona] with extensive experience [2-3 word task information] t
     </pre>
 </div>
 
-<script>
-    function copyToClipboard() {
-        // Copy the text content to clipboard
-        const text = document.getElementById('template-code').innerText;
-        navigator.clipboard.writeText(text).then(() => {
-            // Change the button text to "✔ Copied"
-            const button = document.getElementById('copy-button');
-            button.innerHTML = '✔ Copied';
-            
-            // Revert the button text after 3 seconds
-            setTimeout(() => {
-                button.innerHTML = 'Copy code';
-            }, 3000);
-        });
-    }
-</script>
-
-
 
 ### Final Prompt
 “You are an NLP Research Scientist with extensive experience communicating complex concepts to non-CS professionals. Your task is to generate a high-level prompt-engineering cheat-sheet for beginners. Return your answer as a table with two columns. The first column should include an ordered list explaining how to structure each segment of an ideal prompt. The second column should include a relevant example. Your response should be clear, concise, and straightforward.”
-
-# Thoughts
-
-Needless to say, there are a lot of theories, “frameworks,” and acronyms/mnemonic devices I’m sure some very important people were paid too much money to come up with, but this is what I’ve found works best.
 
 ### If You’re Ever Stuck, Use This Trick:
 1. Copy the below prompt into ChatGPT.
