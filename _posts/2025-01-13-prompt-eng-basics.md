@@ -7,7 +7,7 @@ tags:
   - LLMs
   - prompt engineering
 ---
-
+<!-- 
 <script>
     function copyToClipboard() {
         // Copy the text content to clipboard
@@ -23,7 +23,7 @@ tags:
             }, 3000);
         });
     }
-</script>
+</script> -->
 
 
 <!-- # Prompt Engineering: The Basics -->
@@ -57,7 +57,8 @@ You are an [LLM Persona] with extensive experience [2-3 word task information] t
     <pre id="template-prompt" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; white-space: pre-wrap; word-wrap: break-word; overflow: hidden; font-size: 14px;">
 You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
     </pre>
-    <button onclick="const text = document.getElementById('template-prompt').innerText; navigator.clipboard.writeText(text).then(() => { const button = document.getElementById('copy-button'); button.innerHTML = '✔ Copied'; setTimeout(() => {button.innerHTML = 'Copy code';}, 3000);});" 
+    <button id="template-copy-button" 
+            onclick="const text = document.getElementById('template-prompt').innerText; navigator.clipboard.writeText(text).then(() => { const button = document.getElementById('template-copy-button'); button.innerHTML = '✔ Copied'; setTimeout(() => {button.innerHTML = 'Copy code';}, 3000);});" 
             style="position: absolute; bottom: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
         Copy
     </button>
@@ -73,10 +74,6 @@ You are an [LLM Persona] with extensive experience [2-3 word task information] t
     You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
     </pre>
 </div> -->
-
-
-### Final Prompt
-“You are an NLP Research Scientist with extensive experience communicating complex concepts to non-CS professionals. Your task is to generate a high-level prompt-engineering cheat-sheet for beginners. Return your answer as a table with two columns. The first column should include an ordered list explaining how to structure each segment of an ideal prompt. The second column should include a relevant example. Your response should be clear, concise, and straightforward.”
 
 ### If You’re Ever Stuck, Use This Trick:
 1. Copy the below prompt into ChatGPT.
@@ -98,12 +95,13 @@ You are a senior prompt engineer with extensive experience helping non-experts e
       a. This prompt should be returned in a copyable markdown cell.
 Request additional information as you need it.
     </pre>
-    <button onclick="const text = document.getElementById('help-prompt').innerText; navigator.clipboard.writeText(text).then(() => { const button = document.getElementById('copy-button'); button.innerHTML = '✔ Copied'; setTimeout(() => {button.innerHTML = 'Copy code';}, 3000);});" 
+    <button id="help-copy-button" 
+            onclick="const text = document.getElementById('help-prompt').innerText; navigator.clipboard.writeText(text).then(() => { const button = document.getElementById('help-copy-button'); button.innerHTML = '✔ Copied'; setTimeout(() => {button.innerHTML = 'Copy code';}, 3000);});" 
             style="position: absolute; bottom: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
         Copy
     </button>
 </div>
 
-1. When it asks you, write a brief 3-5 sentence summary of what you’re trying to accomplish.
-2. When it asks you, provide it with your prompt draft.
+2. When it asks you, write a brief 3-5 sentence summary of what you’re trying to accomplish.
+3. When it asks you, provide it with your prompt draft.
 
