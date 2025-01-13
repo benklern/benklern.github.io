@@ -7,13 +7,16 @@ excerpt: 'This study uses NLP to map explanations provided by mothers and health
 date: 2023-01-01
 venue: 'Proceedings of the Annual Meeting of the Cognitive Science Society'
 # slidesurl: 'http://academicpages.github.io/files/slides_mapping_explanations_nlp.pdf'
-# paperurl: 'http://academicpages.github.io/files/mapping_explanations_nlp.pdf'
+paperurl: 'https://escholarship.org/uc/item/6727h95d'
 citation: 'Friedman, Scott et al. (2023). &quot;Mapping a Plurality of Explanations with NLP: A Case Study of Mothers and Health Workers in India.&quot; <i>Proceedings of the Cognitive Science Society</i>. 45(45).'
 ---
 This study uses NLP to map explanations provided by mothers and health workers in India.
 
-<!-- [Download slides here](http://academicpages.github.io/files/slides_mapping_explanations_nlp.pdf)
+<!-- [Download slides here](http://academicpages.github.io/files/slides_mapping_explanations_nlp.pdf) -->
 
-[Download paper here](http://academicpages.github.io/files/mapping_explanations_nlp.pdf) -->
+<!-- [Download paper here](https://escholarship.org/uc/item/6727h95d) -->
 
-Recommended citation: Friedman, Scott et al. (2023). "Mapping a Plurality of Explanations with NLP: A Case Study of Mothers and Health Workers in India." <i>Proceedings of the Cognitive Science Society</i>. 45(45).
+<!-- 
+**Recommended citation:** 
+
+Friedman, Scott et al. (2023). "Mapping a Plurality of Explanations with NLP: A Case Study of Mothers and Health Workers in India." <i>Proceedings of the Cognitive Science Society</i>. 45(45). -->
