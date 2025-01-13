@@ -49,6 +49,12 @@ Each of these 4-5 steps should already improve your results.
 You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
 ```
 
+<div>
+    <button onclick="navigator.clipboard.writeText(document.getElementById('template-code').innerText)">Copy</button>
+</div>
+<pre id="template-code">You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].</pre>
+
+
 ### Final Prompt
 “You are an NLP Research Scientist with extensive experience communicating complex concepts to non-CS professionals. Your task is to generate a high-level prompt-engineering cheat-sheet for beginners. Return your answer as a table with two columns. The first column should include an ordered list explaining how to structure each segment of an ideal prompt. The second column should include a relevant example. Your response should be clear, concise, and straightforward.”
 
