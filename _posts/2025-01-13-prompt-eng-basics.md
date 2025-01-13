@@ -27,19 +27,48 @@ You are an [LLM Persona] with extensive experience [2-3 word task information] t
 ``` -->
 
 <!-- <div>
-    <button onclick="navigator.clipboard.writeText(document.getElementById('template-code').innerText)">Copy</button>
+    <button onclick="navigator.clipboard.writeText(document.getElementById('template-prompt').innerText)">Copy</button>
 </div>
-<pre id="template-code">You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].</pre> -->
+<pre id="template-prompt">You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].</pre> -->
+
+<!-- <div style="position: relative; display: block; width: 100%;">
+    <button onclick="navigator.clipboard.writeText(document.getElementById('template-prompt').innerText)" 
+            style="position: absolute; top: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
+        Copy
+    </button>
+    <pre id="template-prompt" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; white-space: pre-wrap; word-wrap: break-word; overflow: hidden; font-size: 14px;">
+You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
+    </pre>
+</div> -->
 
 <div style="position: relative; display: block; width: 100%;">
-    <button onclick="navigator.clipboard.writeText(document.getElementById('template-code').innerText)" 
+    <button id="copy-button" 
+            onclick="copyToClipboard()" 
             style="position: absolute; top: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
-        Copy code
+        Copy
     </button>
     <pre id="template-code" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; white-space: pre-wrap; word-wrap: break-word; overflow: hidden; font-size: 14px;">
 You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
     </pre>
 </div>
+
+<script>
+    function copyToClipboard() {
+        // Copy the text content to clipboard
+        const text = document.getElementById('template-code').innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            // Change the button text to "✔ Copied"
+            const button = document.getElementById('copy-button');
+            button.innerHTML = '✔ Copied';
+            
+            // Revert the button text after 3 seconds
+            setTimeout(() => {
+                button.innerHTML = 'Copy code';
+            }, 3000);
+        });
+    }
+</script>
+
 
 
 ### Final Prompt
@@ -52,11 +81,11 @@ Needless to say, there are a lot of theories, “frameworks,” and acronyms/mne
 ### If You’re Ever Stuck, Use This Trick:
 1. Copy the below prompt into ChatGPT.
 <div style="position: relative; display: block; width: 100%;">
-    <button onclick="navigator.clipboard.writeText(document.getElementById('help-code').innerText)" 
+    <button onclick="navigator.clipboard.writeText(document.getElementById('help-prompt').innerText)" 
             style="position: absolute; top: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
-        Copy code
+        Copy
     </button>
-    <pre id="help-code" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; white-space: pre-wrap; word-wrap: break-word; overflow: hidden; font-size: 14px;">
+    <pre id="help-prompt" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; white-space: pre-wrap; word-wrap: break-word; overflow: hidden; font-size: 14px;">
 You are a senior prompt engineer with extensive experience helping non-experts elicit optimal responses from LLMs. Your task is to assist the user in optimizing their drafted prompt. Once you understand your task, carefully follow these instructions:
    1. Ask the user to summarize their goals.  
    2. Analyze their response and ask them to provide you their prompt draft.
