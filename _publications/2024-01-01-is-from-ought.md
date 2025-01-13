@@ -1,7 +1,7 @@
 ---
 title: "Is from ought? A comparison of unsupervised methods for structuring values-based wisdom-of-crowds estimates"
 collection: publications
-category: journals
+category: journal
 permalink: /publication/2024-01-01-is-from-ought
 excerpt: 'This article compares unsupervised methods for structuring value-based crowd estimates.'
 date: 2024-01-01
