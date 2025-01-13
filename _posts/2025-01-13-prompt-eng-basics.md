@@ -7,26 +7,7 @@ tags:
   - LLMs
   - prompt engineering
 ---
-<!-- 
-<script>
-    function copyToClipboard() {
-        // Copy the text content to clipboard
-        const text = document.getElementById('template-code').innerText;
-        navigator.clipboard.writeText(text).then(() => {
-            // Change the button text to "✔ Copied"
-            const button = document.getElementById('copy-button');
-            button.innerHTML = '✔ Copied';
-            
-            // Revert the button text after 3 seconds
-            setTimeout(() => {
-                button.innerHTML = 'Copy code';
-            }, 3000);
-        });
-    }
-</script> -->
 
-
-<!-- # Prompt Engineering: The Basics -->
 Each of these 4-5 steps should already improve your results.
 
 | **Instruction**                          | **Example** |
@@ -40,49 +21,22 @@ Each of these 4-5 steps should already improve your results.
 ---
 
 ### Final Template
-<!-- ```
-You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
-``` -->
-
-<!-- <div>
-    <button onclick="navigator.clipboard.writeText(document.getElementById('template-prompt').innerText)">Copy</button>
-</div>
-<pre id="template-prompt">You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].</pre> -->
 
 <div style="position: relative; display: block; width: 100%;">
-    <!-- <button onclick="navigator.clipboard.writeText(document.getElementById('template-prompt').innerText)" 
-            style="position: absolute; top: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
-        Copy
-    </button> -->
     <pre id="template-prompt" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; white-space: pre-wrap; word-wrap: break-word; overflow: hidden; font-size: 14px;">
 You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
     </pre>
     <button id="template-copy-button" 
-            onclick="const text = document.getElementById('template-prompt').innerText; navigator.clipboard.writeText(text).then(() => { const button = document.getElementById('template-copy-button'); button.innerHTML = '✔ Copied'; setTimeout(() => {button.innerHTML = 'Copy code';}, 3000);});" 
+            onclick="const text = document.getElementById('template-prompt').innerText; navigator.clipboard.writeText(text).then(() => { const button = document.getElementById('template-copy-button'); button.innerHTML = '✔ Copied'; setTimeout(() => {button.innerHTML = 'Copy';}, 3000);});" 
             style="position: absolute; bottom: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
         Copy
     </button>
 </div>
 
-<!-- <div style="position: relative; display: block; width: 100%;">
-    <button id="copy-button" 
-            onclick="copyToClipboard()" 
-            style="position: absolute; top: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
-        Copy
-    </button>
-    <pre id="template-code" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; white-space: pre-wrap; word-wrap: break-word; overflow: hidden; font-size: 14px;">
-    You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
-    </pre>
-</div> -->
-
 ### If You’re Ever Stuck, Use This Trick:
 1. Copy the below prompt into ChatGPT.
 
 <div style="position: relative; display: block; width: 100%;">
-    <!-- <button onclick="navigator.clipboard.writeText(document.getElementById('help-prompt').innerText)" 
-            style="position: absolute; top: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
-        Copy
-    </button> -->
     <pre id="help-prompt" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; white-space: pre-wrap; word-wrap: break-word; overflow: hidden; font-size: 14px;">
 You are a senior prompt engineer with extensive experience helping non-experts elicit optimal responses from LLMs. Your task is to assist the user in optimizing their drafted prompt. Once you understand your task, carefully follow these instructions:
    1. Ask the user to summarize their goals.  
@@ -96,7 +50,7 @@ You are a senior prompt engineer with extensive experience helping non-experts e
 Request additional information as you need it.
     </pre>
     <button id="help-copy-button" 
-            onclick="const text = document.getElementById('help-prompt').innerText; navigator.clipboard.writeText(text).then(() => { const button = document.getElementById('help-copy-button'); button.innerHTML = '✔ Copied'; setTimeout(() => {button.innerHTML = 'Copy code';}, 3000);});" 
+            onclick="const text = document.getElementById('help-prompt').innerText; navigator.clipboard.writeText(text).then(() => { const button = document.getElementById('help-copy-button'); button.innerHTML = '✔ Copied'; setTimeout(() => {button.innerHTML = 'Copy';}, 3000);});" 
             style="position: absolute; bottom: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
         Copy
     </button>
