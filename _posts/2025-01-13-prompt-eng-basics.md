@@ -8,7 +8,7 @@ tags:
   - prompt engineering
 ---
 
-# Prompt Engineering: The Basics
+<!-- # Prompt Engineering: The Basics -->
 Each of these 4-5 steps should already improve your results.
 
 | **Instruction**                          | **Example** |
@@ -31,12 +31,12 @@ You are an [LLM Persona] with extensive experience [2-3 word task information] t
 </div>
 <pre id="template-code">You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].</pre> -->
 
-<div style="position: relative; display: inline-block; width: 100%;">
+<div style="position: relative; display: block; width: 100%;">
     <button onclick="navigator.clipboard.writeText(document.getElementById('template-code').innerText)" 
             style="position: absolute; top: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
         Copy code
     </button>
-    <pre id="template-code" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; overflow: auto; font-size: 14px;">
+    <pre id="template-code" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; white-space: pre-wrap; word-wrap: break-word; overflow: hidden; font-size: 14px;">
 You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
     </pre>
 </div>
