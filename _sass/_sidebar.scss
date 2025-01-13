@@ -146,7 +146,7 @@
 
 .author__bio {
   margin: 0;
-  margin-right: 100px;
+  padding-right: 40px;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -158,6 +158,7 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
+  padding-right: 40px;
   font-family: $sans-serif;
   z-index: 10;
   position: relative;
@@ -187,7 +188,6 @@
   position: absolute;
   right: 0;
   margin-top: 15px;
-  margin-right: 100px;
   padding: 10px;
   list-style-type: none;
   border: 1px solid $border-color;
