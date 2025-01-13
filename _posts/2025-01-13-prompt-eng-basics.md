@@ -57,7 +57,7 @@ You are an [LLM Persona] with extensive experience [2-3 word task information] t
     <pre id="template-prompt" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; white-space: pre-wrap; word-wrap: break-word; overflow: hidden; font-size: 14px;">
 You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
     </pre>
-    <button onclick="navigator.clipboard.writeText(document.getElementById('template-prompt').innerText)" 
+    <button onclick="const text = document.getElementById('template-prompt').innerText; navigator.clipboard.writeText(text).then(() => { const button = document.getElementById('copy-button'); button.innerHTML = '✔ Copied'; setTimeout(() => {button.innerHTML = 'Copy code';}, 3000);});" 
             style="position: absolute; bottom: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
         Copy
     </button>
@@ -98,7 +98,7 @@ You are a senior prompt engineer with extensive experience helping non-experts e
       a. This prompt should be returned in a copyable markdown cell.
 Request additional information as you need it.
     </pre>
-    <button onclick="navigator.clipboard.writeText(document.getElementById('help-prompt').innerText)" 
+    <button onclick="const text = document.getElementById('help-prompt').innerText; navigator.clipboard.writeText(text).then(() => { const button = document.getElementById('copy-button'); button.innerHTML = '✔ Copied'; setTimeout(() => {button.innerHTML = 'Copy code';}, 3000);});" 
             style="position: absolute; bottom: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
         Copy
     </button>
