@@ -98,6 +98,7 @@ You are a senior prompt engineer with extensive experience helping non-experts e
 Request additional information as you need it.
     </pre>
 </div>
-1. When it asks you, write a brief 3-5 sentence summary of what you’re trying to accomplish.
-2. When it asks you, provide it with your prompt draft.
+
+2. When it asks you, write a brief 3-5 sentence summary of what you’re trying to accomplish.
+3. When it asks you, provide it with your prompt draft.
 
