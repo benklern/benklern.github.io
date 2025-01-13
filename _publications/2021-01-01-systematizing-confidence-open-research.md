@@ -1,7 +1,7 @@
 ---
 title: "Systematizing confidence in open research and evidence (SCORE)"
 collection: publications
-category: conferences
+category: preprints
 permalink: /publication/2021-01-01-systematizing-confidence-open-research
 excerpt: 'This paper discusses the SCORE framework to enhance confidence in open research and evidence.'
 date: 2021-01-01

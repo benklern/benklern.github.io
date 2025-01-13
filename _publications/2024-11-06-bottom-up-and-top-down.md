@@ -1,7 +1,7 @@
 ---
 title: "Systematizing confidence in open research and evidence (SCORE)"
 collection: publications
-category: conferences
+category: workshops
 permalink: /publication/2024-11-06-bottom-up-and-top-down
 excerpt: 'This paper discusses a bottom-up and top-down approach to characterize the pluralistic value alignment of human-sourced and LLM-sourced textual data.'
 date: 2024-11-06

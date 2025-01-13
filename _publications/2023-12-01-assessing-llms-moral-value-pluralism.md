@@ -1,7 +1,7 @@
 ---
 title: "Assessing LLMs for moral value pluralism"
 collection: publications
-category: conferences
+category: workshops
 permalink: /publication/2023-12-01-assessing-llms-moral-value-pluralism
 excerpt: 'This paper evaluates LLMs for their capability in moral value pluralism.'
 date: 2023-12-01
