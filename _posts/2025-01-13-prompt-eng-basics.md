@@ -49,26 +49,30 @@ You are an [LLM Persona] with extensive experience [2-3 word task information] t
 </div>
 <pre id="template-prompt">You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].</pre> -->
 
-<!-- <div style="position: relative; display: block; width: 100%;">
-    <button onclick="navigator.clipboard.writeText(document.getElementById('template-prompt').innerText)" 
+<div style="position: relative; display: block; width: 100%;">
+    <!-- <button onclick="navigator.clipboard.writeText(document.getElementById('template-prompt').innerText)" 
             style="position: absolute; top: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
         Copy
-    </button>
+    </button> -->
     <pre id="template-prompt" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; white-space: pre-wrap; word-wrap: break-word; overflow: hidden; font-size: 14px;">
 You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
     </pre>
-</div> -->
+    <button onclick="navigator.clipboard.writeText(document.getElementById('template-prompt').innerText)" 
+            style="position: absolute; bottom: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
+        Copy
+    </button>
+</div>
 
-<div style="position: relative; display: block; width: 100%;">
+<!-- <div style="position: relative; display: block; width: 100%;">
     <button id="copy-button" 
             onclick="copyToClipboard()" 
             style="position: absolute; top: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
         Copy
     </button>
     <pre id="template-code" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; white-space: pre-wrap; word-wrap: break-word; overflow: hidden; font-size: 14px;">
-You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
+    You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
     </pre>
-</div>
+</div> -->
 
 
 ### Final Prompt
@@ -78,22 +82,26 @@ You are an [LLM Persona] with extensive experience [2-3 word task information] t
 1. Copy the below prompt into ChatGPT.
 
 <div style="position: relative; display: block; width: 100%;">
-    <button onclick="navigator.clipboard.writeText(document.getElementById('help-prompt').innerText)" 
+    <!-- <button onclick="navigator.clipboard.writeText(document.getElementById('help-prompt').innerText)" 
             style="position: absolute; top: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
         Copy
-    </button>
+    </button> -->
     <pre id="help-prompt" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; white-space: pre-wrap; word-wrap: break-word; overflow: hidden; font-size: 14px;">
-      You are a senior prompt engineer with extensive experience helping non-experts elicit optimal responses from LLMs. Your task is to assist the user in optimizing their drafted prompt. Once you understand your task, carefully follow these instructions:
-         1. Ask the user to summarize their goals.  
-         2. Analyze their response and ask them to provide you their prompt draft.
-         3. In <thinking> tags:
-            a. Write a 1-2 sentence summary of the user’s objectives.
-            b. Indicate the areas in which the provided prompt draft could be improved.
-         4. Using <outline> tags, outline an optimized version of the user’s prompt.
-         5. Generate the complete, optimized prompt.
-            a. This prompt should be returned in a copyable markdown cell.
-      Request additional information as you need it.
+You are a senior prompt engineer with extensive experience helping non-experts elicit optimal responses from LLMs. Your task is to assist the user in optimizing their drafted prompt. Once you understand your task, carefully follow these instructions:
+   1. Ask the user to summarize their goals.  
+   2. Analyze their response and ask them to provide you their prompt draft.
+   3. In  &lt;thinking&gt; tags:
+      a. Write a 1-2 sentence summary of the user’s objectives.
+      b. Indicate the areas in which the provided prompt draft could be improved.
+   4. Using  &lt;outline&gt; tags, outline an optimized version of the user’s prompt.
+   5. Generate the complete, optimized prompt.
+      a. This prompt should be returned in a copyable markdown cell.
+Request additional information as you need it.
     </pre>
+    <button onclick="navigator.clipboard.writeText(document.getElementById('help-prompt').innerText)" 
+            style="position: absolute; bottom: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
+        Copy
+    </button>
 </div>
 
 1. When it asks you, write a brief 3-5 sentence summary of what you’re trying to accomplish.
