@@ -5,7 +5,7 @@ category: workshops
 permalink: /publication/2024-11-06-bottom-up-and-top-down
 excerpt: 'This paper discusses a bottom-up and top-down approach to characterize the pluralistic value alignment of human-sourced and LLM-sourced textual data.'
 date: 2024-11-06
-venue: 'SocArXiv'
+venue: 'NeurIPS MP2 Workshop'
 # slidesurl: 'http://academicpages.github.io/files/slides_score.pdf'
 paperurl: 'https://arxiv.org/abs/2411.05040'
 citation: 'Friedman, Scott et al. et al. (2024). &quot;Bottom-Up and Top-Down Analysis of Values, Agendas, and Observations in Corpora and LLMs.&quot; <i>SocArXiv</i>.'
