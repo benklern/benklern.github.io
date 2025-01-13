@@ -76,25 +76,26 @@ You are an [LLM Persona] with extensive experience [2-3 word task information] t
 
 ### If You’re Ever Stuck, Use This Trick:
 1. Copy the below prompt into ChatGPT.
+
 <div style="position: relative; display: block; width: 100%;">
     <button onclick="navigator.clipboard.writeText(document.getElementById('help-prompt').innerText)" 
             style="position: absolute; top: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
         Copy
     </button>
     <pre id="help-prompt" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; white-space: pre-wrap; word-wrap: break-word; overflow: hidden; font-size: 14px;">
-You are a senior prompt engineer with extensive experience helping non-experts elicit optimal responses from LLMs. Your task is to assist the user in optimizing their drafted prompt. Once you understand your task, carefully follow these instructions:
-   1. Ask the user to summarize their goals.  
-   2. Analyze their response and ask them to provide you their prompt draft.
-   3. In <thinking> tags:
-      a. Write a 1-2 sentence summary of the user’s objectives.
-      b. Indicate the areas in which the provided prompt draft could be improved.
-   4. Using <outline> tags, outline an optimized version of the user’s prompt.
-   5. Generate the complete, optimized prompt.
-      a. This prompt should be returned in a copyable markdown cell.
-Request additional information as you need it.
+      You are a senior prompt engineer with extensive experience helping non-experts elicit optimal responses from LLMs. Your task is to assist the user in optimizing their drafted prompt. Once you understand your task, carefully follow these instructions:
+         1. Ask the user to summarize their goals.  
+         2. Analyze their response and ask them to provide you their prompt draft.
+         3. In <thinking> tags:
+            a. Write a 1-2 sentence summary of the user’s objectives.
+            b. Indicate the areas in which the provided prompt draft could be improved.
+         4. Using <outline> tags, outline an optimized version of the user’s prompt.
+         5. Generate the complete, optimized prompt.
+            a. This prompt should be returned in a copyable markdown cell.
+      Request additional information as you need it.
     </pre>
 </div>
 
-2. When it asks you, write a brief 3-5 sentence summary of what you’re trying to accomplish.
-3. When it asks you, provide it with your prompt draft.
+1. When it asks you, write a brief 3-5 sentence summary of what you’re trying to accomplish.
+2. When it asks you, provide it with your prompt draft.
 
