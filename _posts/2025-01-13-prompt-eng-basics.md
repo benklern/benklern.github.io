@@ -1,35 +1,12 @@
 ---
 title: 'Prompt Engineering Part I'
 date: 2025-01-13
-permalink: /posts/2025/01/blog-post-6/
+permalink: /posts/2025/01/blog-post-1/
 tags:
   - family tutorials
   - LLMs
   - prompt engineering
 ---
-
-# LLM Usage – Rules of Thumb
-
-**1. LLMs Predict, They Don’t “Understand”**
-   - LLMs generate outputs based on patterns in data they were trained on, not true understanding.
-  - They excel at mimicking human-like responses, not reasoning or decision-making.
-  - **LLMs make mistakes**, “hallucinate” facts, and provide outdated information. **Always fact-check critical outputs.**
-
-**2. Quality of Input Affects Output**
-   - Clear and specific prompts lead to better results (this is prompt engineering).
-   - Vague prompts often result in generic or irrelevant responses.
-
-**3. Avoid Sensitive or Confidential Data**
-   - Do not share personal or sensitive information. Models are constantly retrained, so anything you put in may pop out again on someone else’s end.
-
-**4. Know Their Strengths & Weaknesses**
-   - **Strengths**: Simple, text-based tasks (e.g., brainstorming, drafting emails, outlining/editing, or summarizing content).
-   - **Weaknesses**: Complex or overly specific tasks (e.g., complex math, writing a full presentation/document from scratch, answering niche questions).
-
-**5. Model Matters**
-   - Every LLM is different & has unique strengths and weaknesses.
-   - Even within a specific LLM (e.g., ChatGPT), you should take notice of which model you are using. (GPT-3 is significantly worse than GPT-4 and much more prone to error.)
-
 
 # Prompt Engineering: The Basics
 Each of these 4-5 steps should already improve your results.
@@ -45,14 +22,24 @@ Each of these 4-5 steps should already improve your results.
 ---
 
 ### Final Template
-```
+<!-- ```
 You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
-```
+``` -->
 
-<div>
+<!-- <div>
     <button onclick="navigator.clipboard.writeText(document.getElementById('template-code').innerText)">Copy</button>
 </div>
-<pre id="template-code">You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].</pre>
+<pre id="template-code">You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].</pre> -->
+
+<div style="position: relative; display: inline-block; width: 100%;">
+    <button onclick="navigator.clipboard.writeText(document.getElementById('template-code').innerText)" 
+            style="position: absolute; top: 5px; right: 10px; background: #f3f3f3; border: none; padding: 5px; cursor: pointer; border-radius: 3px; font-size: 12px;">
+        Copy code
+    </button>
+    <pre id="template-code" style="padding: 15px; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; overflow: auto; font-size: 14px;">
+You are an [LLM Persona] with extensive experience [2-3 word task information] to [User’s Persona]. Your task is to [Task]. Return your answer as [Output Format]. Your response should be [Style].
+    </pre>
+</div>
 
 
 ### Final Prompt
