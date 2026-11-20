@@ -1,0 +1,95 @@
+---
+layout: default
+permalink: /
+redirect_from:
+  - /about/
+  - /about.html
+  - /publications/
+  - /education/
+---
+{% assign pubs = site.publications | sort: "date" | reverse %}
+{% assign featured = pubs | where: "featured", true %}
+
+<section class="hero" aria-label="Introduction">
+  <div class="hero__text">
+    <p class="eyebrow">{{ site.author.role }} · {{ site.author.employer }} · {{ site.author.location }}</p>
+    <h1 class="hero__statement">{{ site.author.statement }}</h1>
+    <div class="link-row">
+      {% include contact-links.html %}
+    </div>
+  </div>
+  <img class="hero__photo" src="{{ site.author.photo | relative_url }}" alt="Portrait of {{ site.author.name }}" width="340" height="425">
+</section>
+
+{% if featured.size > 0 %}
+<section id="work" class="section">
+  <h2 class="section__label">Selected work</h2>
+  <div class="featured">
+    {% for pub in featured %}
+    <article class="feature">
+      {% if pub.image %}
+      <a class="feature__figure" href="{{ pub.paperurl | default: pub.url | relative_url }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ pub.image | relative_url }}" alt="" loading="lazy">
+      </a>
+      {% endif %}
+      <h3 class="feature__title">{{ pub.title }}</h3>
+      {% if pub.summary %}<p class="feature__summary">{{ pub.summary }}</p>{% endif %}
+      <p class="feature__meta">{{ pub.venue_short | default: pub.venue }}, {{ pub.date | date: "%Y" }}{% if pub.paperurl %} · <a href="{{ pub.paperurl }}">Paper</a>{% endif %}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if site.data.projects and site.data.projects.size > 0 %}
+<section id="projects" class="section">
+  <div class="section__head">
+    <h2 class="section__label">Open-source projects</h2>
+    <a class="section__more" href="https://github.com/{{ site.author.github }}">All on GitHub →</a>
+  </div>
+  <div class="projects">
+    {% for p in site.data.projects %}
+    <a class="project" href="{{ p.url }}">
+      <span class="project__name">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v15H6a2 2 0 0 0-2 2V5z"/><path d="M4 20a2 2 0 0 0 2 2h13v-4"/></svg>
+        {{ p.name }}
+      </span>
+      {% if p.description %}<span class="project__desc">{{ p.description }}</span>{% endif %}
+      {% if p.language %}<span class="project__lang">{{ p.language }}</span>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section id="publications" class="section section--tight">
+  <div class="section__head">
+    <h2 class="section__label">Publications</h2>
+    <a class="section__more" href="{{ site.author.googlescholar }}">All on Google Scholar →</a>
+  </div>
+  <ol class="pubs" reversed>
+    {% for pub in pubs %}
+    <li class="pub">
+      <span class="pub__year">{{ pub.date | date: "%Y" }}</span>
+      <div class="pub__body">
+        <a class="pub__title" href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
+        <span class="pub__meta">{{ pub.authors | replace: "Benkler, N.", "<strong>Benkler, N.</strong>" }} · <i>{{ pub.venue_short | default: pub.venue }}</i></span>
+      </div>
+      {% if pub.paperurl %}<a class="pub__link" href="{{ pub.paperurl }}" aria-label="Paper: {{ pub.title | escape }}">Paper ↗</a>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section id="about" class="section about">
+  <h2 class="section__label">About</h2>
+  <div class="about__body">
+    <p class="about__lead">I've been a research scientist at <a href="{{ site.author.employer_url }}">Smart Information Flow Technologies</a> since 2020, working across computational anthropology, LLM evaluation and physiological signals for team cohesion.</p>
+    <p>When I'm not working, I'm hiking Vermont's Green Mountains or having remarkably one-sided conversations with my dog Alfred, mostly about tennis balls.</p>
+    <dl class="edu">
+      {% for e in site.data.education %}
+      <div><dt>{{ e.year }}</dt><dd>{{ e.degree }}, {{ e.school }}</dd></div>
+      {% endfor %}
+    </dl>
+  </div>
+</section>

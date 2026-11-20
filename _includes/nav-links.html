@@ -1,0 +1,5 @@
+{% assign home = '/' | relative_url %}<a href="{{ home }}#work">Work</a>
+{% if site.data.projects and site.data.projects.size > 0 %}<a href="{{ home }}#projects">Projects</a>
+{% endif %}<a href="{{ home }}#publications">Publications</a>
+<a href="{{ home }}#about">About</a>
+<a href="{{ '/cv/' | relative_url }}">CV</a>

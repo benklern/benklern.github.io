@@ -1,0 +1,5 @@
+<a href="mailto:{{ site.author.email }}">Email</a>
+<a href="{{ site.author.googlescholar }}">{% if include.short %}Scholar{% else %}Google Scholar{% endif %}</a>
+<a href="https://github.com/{{ site.author.github }}">GitHub</a>
+{% unless include.short %}<a href="{{ site.author.orcid }}">ORCID</a>
+<a href="{{ '/cv/' | relative_url }}">CV</a>{% endunless %}

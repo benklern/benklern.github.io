@@ -1,0 +1,9 @@
+# Featured open-source projects.
+# The "Projects" section (and its menu link) only appears when this list has entries.
+# Add one by uncommenting and editing the example below.
+#
+# - name: "FORGE"
+#   description: "Framework Orchestrating Reviewable & Guided Engineering."
+#   language: "Python"
+#   url: "https://github.com/benklern/FORGE"
+[]
