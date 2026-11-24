@@ -14,6 +14,7 @@ redirect_from:
   <div class="hero__text">
     <p class="eyebrow">{{ site.author.role }} · {{ site.author.employer }} · {{ site.author.location }}</p>
     <h1 class="hero__statement">{{ site.author.statement }}</h1>
+    {% if site.author.statement_sub %}<p class="hero__sub">{{ site.author.statement_sub }}</p>{% endif %}
     <div class="link-row">
       {% include contact-links.html %}
     </div>
@@ -86,7 +87,7 @@ redirect_from:
   <div class="about__body">
     <p class="about__lead">I'm a research scientist at <a href="{{ site.author.employer_url }}">Smart Information Flow Technologies</a> (SIFT), where I've worked on DARPA-funded research programs since 2020. My work sits where three fields rarely meet: language models and how we evaluate them, machine learning on wearable physiological data, and multi-agent systems that do real work.</p>
     <p>Lately that has meant leading the engineering behind CHERI-PIT, a multi-agent system that ports real-world C/C++ to memory-safe CHERI hardware with minimal human intervention. It has also meant pretraining transformer encoders on wearable signals to track stress in six-person crews on month-long analogue missions. Earlier, I defined Recognizing Value Resonance as a new NLP task and used it in one of the earliest evaluations of moral value pluralism in LLMs. What ties it together is turning open questions into well-posed tasks, then building the systems that answer them on real data.</p>
-    <p>When I'm not working, I'm hiking Vermont's Green Mountains or having remarkably one-sided conversations with my dog Alfred, mostly about tennis balls.</p>
+    <p>When I'm not working, I'm prototyping mechanical puzzles on my 3D printer, or having remarkably one-sided conversations with my dog Alfred, mostly about tennis balls.</p>
     <dl class="edu">
       {% for e in site.data.education %}
       <div><dt>{{ e.year }}</dt><dd>{{ e.degree }}, {{ e.school }}</dd></div>
