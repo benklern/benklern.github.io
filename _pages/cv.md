@@ -1,34 +1,19 @@
 ---
-layout: archive
 title: "Curriculum Vitae"
 permalink: /cv/
-author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
 
-<!-- Education
-======
-**Tufts University** — Medford, MA  
-*July 2023 - Expected December 2024*  
-M.Sc. in Data Science (GPA: 4.0)
+## Education
+{% for e in site.data.education %}
+- **{{ e.degree }}**, {{ e.school }}, {{ e.year }}
+{% endfor %}
 
-**Carleton College** — Northfield, MN  
-*September 2016 - June 2020*  
-B.A. in Economics with an Emphasis in Statistics and Computer Science   -->
+## Work experience
 
-Education
-======
-  <ul>{% for post in site.education reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
-Work experience
-======
-
-## Smart Information Flow Technologies (SIFT)
+### Smart Information Flow Technologies (SIFT)
 **Research Scientist (April 2023 - Present)**
 
 - Developed machine learning pipelines to map cultural text data onto a multidimensional value framework and uncover latent belief clusters using unsupervised methods.
@@ -49,40 +34,22 @@ Work experience
 - Led publication on Recognizing Value Resonance @ SBP-BRiMS 2022. 
 - Contributed to multiple winning project proposals.
   
-Skills
-======
+## Skills
 **Programming Languages**: Python, R, SQL, C++, Lisp, Java, Javascript, HTML  
 **Libraries & Packages**: PyTorch, TensorFlow, RayTune, UMAP, scikit, SciPy, Poetry, Flask, Docker, Dash, Matplotlib, Pandas, NumPy  
 **Statistics & ML Skills**: Deep Learning, Unsupervised Learning, Reinforcement Learning, Explainable AI, Regression & Classification, Feature Engineering, Model Tuning & Optimization, Pipeline Engineering, UI Overlay  
 **Technical Proficiencies**: Git, CUDA, LaTeX, Jupyter, Qualtrics, Microsoft Office  
 **Natural Languages**: Native: English, Hebrew | Conversational: Spanish
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+## Publications
+{% assign pubs = site.publications | sort: "date" | reverse %}{% for pub in pubs %}
+- [{{ pub.title }}]({{ pub.url | relative_url }}). {{ pub.authors }} *{{ pub.venue_short | default: pub.venue }}*, {{ pub.date | date: "%Y" }}.
+{% endfor %}
   
-<!-- Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul> -->
-
-<!--   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams -->
 
 
-Awards & Honors
-======
+
+## Awards & Honors
 - Technical Achievement Award, Smart Information Flow Technologies, 2024
 - Individual Performance Award, Smart Information Flow Technologies, 2022
 - Team Performance Award, Smart Information Flow Technologies, 2022

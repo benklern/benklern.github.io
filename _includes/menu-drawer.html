@@ -1,0 +1,16 @@
+<div class="drawer" id="menu-drawer" hidden>
+  <button class="drawer__scrim" type="button" aria-label="Close menu" data-menu-close tabindex="-1"></button>
+  <aside class="drawer__panel" aria-label="Site menu">
+    <div class="drawer__top">
+      <button class="menu-button menu-button--close" type="button" aria-label="Close menu" data-menu-close>
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav class="drawer__nav" aria-label="Main (mobile)">
+      {% include nav-links.html %}
+    </nav>
+    <div class="drawer__links">
+      {% include contact-links.html short=true %}
+    </div>
+  </aside>
+</div>
