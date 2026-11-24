@@ -1,6 +1,6 @@
 # Site settings
 title: "Noam Benkler"
-description: "AI research scientist building AI that understands people: NLP for the values in text, signal processing for team dynamics, and agent orchestration."
+description: "AI research scientist working across LLM evaluation, machine learning on wearable physiological data, and multi-agent systems."
 url: "https://benklern.github.io"
 baseurl: ""
 locale: "en-US"
@@ -16,7 +16,7 @@ author:
   location: "Burlington, VT"
   email: "nbenkler@sift.net"
   photo: "/images/profile.jpg"
-  statement: "I build AI that understands people: NLP that surfaces the values hidden in text, signal processing that reads how teams work together, and agent orchestration that puts it all to work."
+  statement: "I build AI that understands people and does real work: NLP that surfaces the values in text, transformer models that read stress from wearable signals, and multi-agent systems that port real-world code."
   googlescholar: "https://scholar.google.com/citations?user=mup4_VAAAAAJ"
   semantic: "https://www.semanticscholar.org/author/Noam-Benkler/2139850598"
   orcid: "https://orcid.org/0009-0002-7927-6482"
